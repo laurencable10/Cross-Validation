@@ -27,9 +27,7 @@ Building upon validating "generalizeability" of models by testing them on unseen
   - 90-10 Split
 - Comparing and explaining performances of  various train/test splits 
 
-We prevent overfitting by not using all the data, and
-We retain some remaining data to evaluate our model.
-In the case of cross-validation, the model fitting and evaluation is performed multiple times on different train/test splits of the data.
-
-Ultimately we can use the training/test validation framework to compare multiple models on the same dataset. This could be comparisons of two linear models, or of completely different models on the same data.
-
+### Performing K-Folds Cross Validation
+- Taking the idea of a single train/test split and expanding it to multiple tests across different train/test splits of your data, performing various K-Folds Cross Validation (changing cv argument to alter amount)
+  - 3 Fold Cross-Validation
+  - 5 Fold Cross-Validation
